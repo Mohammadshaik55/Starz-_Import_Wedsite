@@ -107,7 +107,7 @@ const HomePage = () => {
         {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://res-console.cloudinary.com/dg74vvt8r/thumbnails/v1/image/upload/v1752858951/YmdfZ2plcnI3/preview"
+              src="https://i.pinimg.com/736x/75/ce/ac/75ceacf92d4adc719f872ed811554aaa.jpg"
               alt="Background"
               className="w-full h-full object-cover"
             />
