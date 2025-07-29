@@ -106,7 +106,7 @@ const Contact = () => {
 
             {/* About Section */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h2 className="text-2xl font-semibold text-charcoal mb-4">About Starz Import Perfumes</h2>
+              <h2 className="text-2xl font-semibold text-charcoal mb-4">About Starz Import </h2>
               <p className="text-gray-600 mb-4">
                 We are your premier destination for authentic luxury fragrances. Our carefully curated collection features the finest perfumes from world-renowned brands including Gucci, Armani, Prada, and Bulgari.
               </p>

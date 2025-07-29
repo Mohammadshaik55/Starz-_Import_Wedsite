@@ -12,7 +12,8 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-4">
               <div className="text-2xl font-bold">
                 <span className="text-gold">Starz</span>
-                <span className="text-white"> Import Perfumes</span>
+                <span className="text-white"> Import  </span>
+                <span className="ml-2 text-base italic text-gold">Illuminate your aura.</span>
               </div>
             </div>
             <p className="text-gray-300 mb-6">
@@ -76,7 +77,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-6 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Starz Import Perfumes. All rights reserved.
+            © 2024 Starz Import Perfume. All rights reserved.
           </p>
         </div>
       </div>

@@ -107,7 +107,7 @@ const HomePage = () => {
         {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://res.cloudinary.com/du7fctf0z/image/upload/v1752100881/ChatGPT_Image_Jul_9_2025_05_36_53_PM_vaxoes.png"
+              src="https://sdmntprcentralus.oaiusercontent.com/files/00000000-ce28-61f5-ba4b-a841c2e415c1/raw?se=2025-07-29T16%3A48%3A02Z&sp=r&sv=2024-08-04&sr=b&scid=f6330956-2cd3-5ffa-8c3c-a49869ae1daf&skoid=f28c0102-4d9d-4950-baf0-4a8e5f6cf9d4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-28T18%3A05%3A15Z&ske=2025-07-29T18%3A05%3A15Z&sks=b&skv=2024-08-04&sig=lalOqQGjt66nSG/dHGHP23BOUr862lZp8zC9xNPME8c%3D"
               alt="Background"
               className="w-full h-full object-cover"
             />
@@ -124,8 +124,8 @@ const HomePage = () => {
         {/* Content */}
         <div className="relative z-20 text-center text-white px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Discover Your Signature.<br />
-            <span className="text-gold">Define Your Presence.</span>
+            Reveal Your Aura.<br />
+            <span className="text-gold">With Confidence.</span>
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-gray-300 max-w-2xl mx-auto">
             Experience luxury fragrances from the world's most prestigious brands. Authentic perfumes for the discerning individual.
@@ -142,78 +142,60 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 relative">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://i.pinimg.com/1200x/d4/d6/8b/d4d68bebc16df7affbb3e5c8b059f5f7.jpg" // 🔁 Replace with your actual background URL
-            alt="Features Background"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-white bg-opacity-70"></div> {/* Optional: adjust overlay for readability */}
-        </div>
+      {/* Features Section + Brand Showcase with shared background */}
+      <div className="relative py-20" style={{backgroundImage: "url('https://i.pinimg.com/736x/03/0a/09/030a09d7080a2e24d0ffa736dfd63650.jpg')", backgroundSize: 'cover', backgroundPosition: 'top center', backgroundRepeat: 'no-repeat'}}>
+        <div className="absolute inset-0 bg-white bg-opacity-75 z-0"></div>
+        <div className="relative z-10">
+          {/* Features Section */}
+          <section className="py-20">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-charcoal mb-4">Why Choose Starz Import </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                We bring you the finest luxury fragrances with guaranteed authenticity and exceptional service.
+              </p>
+            </div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-charcoal mb-4">Why Choose Starz Import Perfumes</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We bring you the finest luxury fragrances with guaranteed authenticity and exceptional service.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="group text-center p-8 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white bg-opacity-90 backdrop-blur-md"
-              >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gold bg-opacity-10 rounded-full text-gold mb-6 group-hover:bg-gold group-hover:text-white transition-all duration-300">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-4">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      {/* Brand Showcase */}
-      <section className="py-20 relative">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-              src="https://res.cloudinary.com/du7fctf0z/image/upload/v1752169303/new_jooqup.png" // 🔁 Replace this URL with your background image URL
-              alt="Background"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-white bg-opacity-80" />
-          </div>
-
-          {/* Content */}
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-charcoal mb-12">
-              Premium Brands
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {brands.map((brand, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="group flex items-center justify-center p-6 bg-white rounded-lg hover:shadow-lg transition-all duration-300 cursor-pointer"
+                  className="group text-center p-8 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white bg-opacity-90 backdrop-blur-md"
                 >
-                  <span className="text-lg font-semibold text-charcoal group-hover:text-gold transition-colors">
-                    {brand}
-                  </span>
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gold bg-opacity-10 rounded-full text-gold mb-6 group-hover:bg-gold group-hover:text-white transition-all duration-300">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-charcoal mb-4">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600">
+                    {feature.description}
+                  </p>
                 </div>
               ))}
             </div>
-          </div>
-        </section>
+          </section>
+          {/* Brand Showcase */}
+          <section className="py-20">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-center text-charcoal mb-12">
+                Premium Brands
+              </h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {brands.map((brand, index) => (
+                  <div
+                    key={index}
+                    className="group flex items-center justify-center p-6 bg-white rounded-lg hover:shadow-lg transition-all duration-300 cursor-pointer"
+                  >
+                    <span className="text-lg font-semibold text-charcoal group-hover:text-gold transition-colors">
+                      {brand}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
       {/* Men's Perfumes */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

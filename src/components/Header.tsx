@@ -21,7 +21,8 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-2">
             <div className="text-2xl font-bold text-gray-900">
               <span className="text-gold">Starz</span>
-              <span className="text-charcoal"> Import Perfumes</span>
+              <span className="text-charcoal"> Import </span>
+              <span className="ml-2 text-base italic text-gold">Illuminate your aura.</span>
             </div>
           </Link>
 
