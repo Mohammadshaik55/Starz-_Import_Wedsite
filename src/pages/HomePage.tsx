@@ -124,8 +124,8 @@ const HomePage = () => {
         {/* Content */}
         <div className="relative z-20 text-center text-white px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Reveal Your Aura.<br />
-            <span className="text-gold">With Confidence.</span>
+            Reveal Your Aura<br />
+            <span className="text-gold">With Confidence</span>
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-gray-300 max-w-2xl mx-auto">
             Experience luxury fragrances from the world's most prestigious brands. Authentic perfumes for the discerning individual.
